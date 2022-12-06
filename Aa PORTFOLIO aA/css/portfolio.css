@@ -1,0 +1,294 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto Mono', monospace;
+}
+
+
+/*VARIAVEIS DE COR*/
+
+:root {
+    --bg-color: #10191f;
+    --bg2-color: #19252e;
+    --sidebar: #1d976c;
+    --white: rgb(214, 214, 214);
+    --color23: #576772;
+    --projetu: #0f2433;
+}
+
+::selection {
+    color: var(--bg-color);
+    background: var(--sidebar);
+}
+
+
+/* SCROLL BAR */
+
+
+/* width */
+
+::-webkit-scrollbar {
+    width: 5px;
+}
+
+
+/* Track */
+
+ ::-webkit-scrollbar-track {
+    background: none;
+}
+
+
+/* Handle */
+
+ ::-webkit-scrollbar-thumb {
+    background: var(--color23);
+}
+
+
+/* Handle on hover */
+
+ ::-webkit-scrollbar-thumb:hover {
+    background: var(--color23);
+}
+
+body {
+    background-color: var(--bg-color);
+}
+
+.sidebar {
+    width: 75px;
+    height: 100%;
+    position: fixed;
+    background-color: var(--sidebar);
+    display: flex;
+}
+
+.sidebar ul {
+    text-decoration: none;
+}
+
+.sidebar ul li {
+    width: 75px;
+    height: 75px;
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.1s;
+}
+
+.sidebar ul a {
+    text-decoration: none;
+    color: var(--bg-color);
+}
+
+.sidebar ul a:hover {
+    color: rgb(50, 52, 70);
+}
+
+.sidebar ul a:active {
+    color: var(--white);
+}
+
+.social-media {
+    color: var(--white);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 30px;
+    margin-top: 30px;
+    margin-left: 75px;
+}
+
+.social-div {
+    margin: 7px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+.social-div a {
+    text-decoration: none;
+    color: var(--white);
+    font-size: 40px;
+    margin: 30px;
+}
+
+.webservices {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 75px;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.webservices h1 {
+    font-size: 40px;
+    margin: 40px 0 10px 0;
+    color: var(--white);
+}
+
+.banner {
+    background: url(../img/backdop.jpg) center no-repeat;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.webprojects {
+    width: 100%;
+}
+
+.image {
+    width: 200px;
+}
+
+
+/* ^ NÃO MUDAR ^ */
+
+
+/*WEB SERVICES*/
+
+.projects {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center
+}
+
+.tilet {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.barrinha {
+    width: 80%;
+    height: 5px;
+    background-color: var(--color23);
+}
+
+.iframes- {
+    width: 100%;
+    margin-bottom: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.projetu {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+    background-color: var(--projetu);
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.projetu a {
+    color: var(--white);
+    text-decoration: none;
+    padding: 15px 15px;
+    margin: 15px;
+    background-color: var(--sidebar);
+    box-shadow: 0 4px #1d976c31;
+    transition: 0.3s;
+}
+
+.projetu a:hover {
+    background-color: #1b7052;
+}
+
+.projetu h2 {
+    color: var(--white);
+    font-weight: 300;
+    margin-bottom: 10px;
+}
+
+.imagi {
+    width: 100%;
+}
+
+
+/*DZN SERVICES*/
+
+.logoss {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+.tuxt {
+    text-align: center;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    color: var(--white);
+    font-size: 25px;
+}
+
+.logoinah {
+    width: 300px;
+    margin: 0 20px;
+}
+
+.box-images {
+    background-color: var(--projetu);
+    padding: 5px 10px 20px 10px;
+    margin: 20px;
+    border-radius: 5px;
+}
+
+
+/*MOBILE VERSION*/
+
+@media(max-width: 600px) {
+    .social-div a {
+        font-size: 30px;
+        margin: 10px;
+    }
+    .social-media p {
+        font-size: 11px;
+        font-weight: 200;
+    }
+    .sidebar {
+        width: 60px;
+    }
+    .sidebar ul li {
+        width: 60px;
+    }
+    .webservices {
+        margin-left: 60px;
+    }
+    /* ^ NÃO MUDAR ^ */
+    .projetu {
+        width: 75%;
+    }
+    .tilet h1 {
+        font-size: 30px;
+    }
+    .projetu h2 {
+        font-size: 15px;
+    }
+    .imagi {
+        width: 100%;
+    }
+    .logoinah {
+        width: 200px;
+        margin: 10px 10px;
+    }
+    .box-images {
+        padding: 5px 2px 20px 2px;
+        margin: 20px 5px;
+    }
+}
